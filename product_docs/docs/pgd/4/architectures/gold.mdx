@@ -16,5 +16,7 @@ The Always On Gold architecture includes the following:
 -  One BDR witness node in location C (optional but recommended)
 -  Four HARP-Proxy nodes (two in location A, two in location B)
 -  Two Barman nodes (one in location A, one in location B)
+-  An optional witness node must be placed in a third region to increase tolerance for location failure.
+Otherwise, when a location fails, actions requiring global consensus are blocked, such as adding new nodes and distributed DDL.
 
 ![Always On Gold architecture](../images/gold3.png)
